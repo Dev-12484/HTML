@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout HW</title>
+        <style>
+            ul{
+                list-style:none;
+            }
+            *{
+                margin:0px ; 
+                padding:0px;
+            }
+            .navbar ul a li{
+                float:right;
+                padding:0px 20px;
+                line-height: 60px;
+                transition: all 1s;
+            }
+            .navbar{
+                background-color:black;
+                height:60px;
+            }
+            .navbar ul a{
+                size: 18px;
+                color: white;
+                font-family:jokerman;
+            }
+            .navbar ul li:hover{
+                background-color:red;
+                font-size: 30px;
+            }
+            .navbar h1{
+                float:left;
+                color:white;
+                line-height:60px;
+                margin-right:40px;
+                transition: all 0.4s;
+            }
+            .navbar img{
+                float:left;
+                border-radius: 50%;
+                line-height:60px;
+                margin-right: 50px;
+                transition: all 0.5s;
+            }
+            .navbar h1:hover{
+                margin-right: 70px;
+                background-color: yellow;
+            }
+            .navbar img:hover{
+                margin-right: 60px;
+                background-color:red;
+            }
+            .heading{
+                border:red 3px solid;
+                height:500px;
+                margin-bottom: 10px;
+            }
+            .flexbox1{
+                display:flex;
+                height:300px;
+                border:brown 3px solid;
+                margin-bottom:10px;
+                justify-content: space-evenly;
+            }
+            .flexbox1 .inner1{
+                border:blue 1px solid;
+                height:100%;
+                width:300px;
+            }
+            .flexbox2{
+                height:500px;
+                border:black 5px solid;
+                display:flex;
+                margin-bottom: 10px;
+            }
+            .inner3{
+                height:100%;
+                width:30%;
+                border:green 1px solid;
+            }
+            .inner2{
+                height:100%;
+                width:70%;
+                border:green 1px solid;
+            }
+            .flexbox4{
+                height:500px;
+                border:black 5px solid;
+                display:flex;
+                margin-bottom: 10px;
+            }
+            .inner4{
+                height:100%;
+                width:70%;
+                border:red 1px solid;
+            }
+            .inner5{
+                height:100%;
+                width:30%;
+                border:red 1px solid;
+            }
+            .flexbox5{
+                height:300px;
+                border:black 3px solid;
+                display:flex;
+                justify-content: center;
+                align-items:center ;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <h1>The Work</h1>
+            <img src="parralax_1.jpeg" width="50px" height="50px">
+            <ul>
+                <a href=""><li> <i class="fa fa-youtube-square"></i>youtube</li></a>
+                <a href=""><li> <i class="fa fa-twitter-square"></i>twitter</li></a>
+                <a href=""><li> <i class="fa fa-instagram"></i>insta</li></a>
+                <a href=""><li> <i class="fa fa-facebook-square"></i>facebook</li></a>
+                <a href=""><li> <i class="fa fa-home"></i>Home</li></a>
+            </ul>
+        </div>
+        <div class="heading">
+            <h1>Heading</h1>
+        </div>
+        <div class="flexbox1">
+            <div class="inner1"></div>
+            <div class="inner1"></div>
+            <div class="inner1"></div>
+        </div>
+        <div class="flexbox2">
+            <div class="inner3"></div>
+            <div class="inner2"></div>
+        </div>
+        <div class="flexbox4">
+            <div class="inner4"></div>
+            <div class="inner5"></div>
+        </div>
+        <div class="flexbox5">
+            <div class="inner6"><h1>Footer</h1></div>
+        </div>
+    </body>
+</html>

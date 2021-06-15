@@ -1,0 +1,71 @@
+.container{
+    /*border: black 3px solid;*/
+    width:650px;
+    /*height:500px;*/
+    background-color: rgba(0, 0, 0, 0);
+    padding:40px;
+    margin: auto;
+}
+input,select{
+    margin: 0px 25px;
+}
+h1{
+    text-align: center;
+}
+.c1{
+    width:86%;
+}
+.c3{
+    color:white;
+    background-color: blue;
+    width:86%;
+    height:50px;
+}
+.c1 , .c2{
+    padding:10px;
+    font-family: jokerman;
+    /*background-color: yellow;
+    color:red;*/
+}
+.c2{
+    width: 37%;
+}
+/*.container form .c2:hover{
+    background-color: yellow;
+}
+.container form .c1:hover{
+    background-color: yellow;
+}*/
+.c4{
+    width:45%;
+}
+.c5{
+    text-align: center;
+}
+body{
+    background-image: url(sign-up.jpeg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#select{
+    width:583px;
+}
+.c2,.c1,.c4{
+    border-radius: 50px;
+    outline: none;
+    border-bottom: red 4px solid;
+    border-top: yellow 4px solid;
+    border-left: orange 4px solid;
+    border-right: blue 4px solid;
+    /*transition: all 0.2s*/
+}
+.c1:focus , .c2:focus{
+    background-color: cyan;
+}
+/*.c1:hover , .c2:hover{
+    background-color: chartreuse;
+}*/
+fieldset{
+    border: none;
+    border-top: white 2px solid;
+}

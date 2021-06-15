@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="Sign Up form.css">
+    </head>
+    <body>
+        <div class="container">
+            <fieldset>
+            <legend style="color:white;font-size:40px;text-align: center;">Register</legend>
+            </fieldset>
+            <p style="text-align: center;color:white;">Create an account. It's very easy and takes only 2 minutes</p>
+            <form>
+                <input type="text" name="First name" placeholder="First name" required="required" class="c2">
+                <input type="text" name="Last name" placeholder="Last name" required="required" class="c2"><br><br>
+                <select name="Gender" placeholder="Select your Gender" class="c1" class="c4" id="select">
+                    <option value="" disabled selected>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select><br><br>
+                <input type="text" name="contact nuber" placeholder="contact number" required="required" class="c1" ><br> <br>
+                <input type="email" name="email" required="required" placeholder="email" class="c1" ><br><br>
+                <input type="password" name="password" placeholder="password" required="required" class="c1" id="pass"><br><br>
+                <input type="password" name="password" placeholder="Confirm Password" required="required" class="c1" id="cpass"><br><br>
+                <label style="color: white;"><input type="checkbox" name="terms and conditions" value="Terms and Conditions" >I agree to the <a href="Terms and Conditions.html" target="_blank">terms and conditions</a><br><br></label>
+                <input type="submit" name="submit" value="Register Now" class="c3" onclick="change()">
+            </form>
+        </div>
+        <p class="c5" style="color: white;">Already Have an Accout ? <a href="Log In.html" style="color:white;">Log In</a></p>
+        <script>
+            function change()
+            {
+                document.getElementById("stuff").innerHTML = "Thank you for submitting";
+                var x = document.getElementById("stuff");
+                x.style.color="red";
+                x.style.fontSize="50px";
+                x.style.fontFamily="jokerman";
+                x.style.textAlign="center";
+                x.style.marginTop="17%";
+                x.style.backgroundImage="url(dev.jpg)";
+            }
+
+            var pass=document.getElementById("pass").value;
+            var cpass=document.getElementById("cpass").value;
+
+            if(pass != cpass){
+                cpass.style.border="red 3px solid"
+                cpass.innerHTML.placeholder="Passwords not matched"
+                return false;
+            }
+        </script>
+    </body>
+</html>

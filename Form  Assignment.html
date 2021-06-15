@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Quiz
+        </title>
+
+    </head>
+    <body style="background-color:pink;font-family:jokerman;">
+
+        <h1 style="color:cyan;text-align: center;font-size: 15px;"><mark style="background-color:white;">HTML Quiz</mark></h1>
+        <h2 style="color:cyan;text-align:center;font-size:15px;"><mark style="background-color:white;"> Made for studying how to make forms in HTML</mark></h2>
+        <fieldset style="margin-left: 150px;margin-right: 150px;font-size:10px;margin-bottom:150px;">
+            <p style="font-size:10px;">1.What is the value inside the type attribute to insert a textbox ?</p>
+            <label><input type="radio" name="type" value="input"> Input <br></label>
+            <label><input type="radio" name="type" value="text" class="correct"> Text <br></label>
+            <label><input type="radio" name="type" value="number"> Number <br></label>
+            <label><input type="radio" name="type" value="checkbox"> Checkbox <br></label>
+            <hr>
+            <p style="font-size:10px;">2.What tag you use to make a box in your form ?</p>
+            <label><input type="radio" name="box" value="type" class="correct">Fieldset<br></label>
+            <label><input type="radio" name="box" value="Donald Trump"> Donald Trump <br></label>
+            <label><input type="radio" name="box" value="Paragraph"> Paragraph <br></label>
+            <label><input type="radio" name="box" value="Chinese Pencils"> Chinese Pencils <br></label>
+            <hr>
+            <p style="font-size:10px;">3.What is used to make text in fieldset?</p>
+            <label><input type="radio" name="syn" value="type" class="correct"> Legend <br></label>
+            <label><input type="radio" name="syn" value="Donald Trump"> Submit <br></label>
+            <label><input type="radio" name="syn" value="Paragraph"> Input <br></label>
+            <label><input type="radio" name="syn" value="Chinese Pencils"> Chinese Pencils <br></label>
+            <hr>
+            <p style="font-size:10px;">4.What is used to create a dropdown box in a form?</p>
+            <label><input type="radio" name="synt" value="type"> submit <br></label>
+            <label><input type="radio" name="synt" value="Donald Trump"> button <br></label>
+            <label><input type="radio" name="synt" value="Paragraph" class="correct"> select<br></label>
+            <label><input type="radio" name="ynt" value="Chinese Pencils"> input <br></label>
+            <hr>
+            <p style="font-size:10px;">5. number box in forms</p>
+            <label><input type="radio" name="syntax" value="input"> Input <br></label>
+            <label><input type="radio" name="syntax" value="type"> Type <br></label>
+            <label><input type="radio" name="syntax" value="number" class="correct"> Number <br></label>
+            <label><input type="radio" name="syntax"> Checkbox <br></label>
+            <hr>
+            <button onclick="calculate()">Submit</button>
+        </fieldset>
+        <h1 id="sco" style="margin-top:15px;"></h1>
+        <Script>
+            function calculate(){
+                var score = 0 ;
+                var correct = document.getElementsByClassName("correct");
+
+                for(var i=0 ; i < correct.length ; i++){
+                    if (correct[i].checked == true){
+                    score++;
+                }
+                }
+
+                document.getElementById("sco").innerHTML= score ;
+                }
+        </Script>
+    </body>
+</html>

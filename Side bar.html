@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Side Bar</title>
+        <style>
+            ul{
+                list-style:none;
+            }
+            .sidebar{
+                background-color: black;
+                height:625px;
+                width:250px;
+
+                position:fixed;
+                left:-250px;
+                top:0px;
+                transition:all 0.4s;
+            }
+            a{
+                color:white;
+                size:18px;
+                font-family: jokerman;
+            }
+            .sidebar ul a li{
+                padding: 0px 20px;
+                line-height:90px;
+                transition: all 0.3s;
+            }
+            .sidebar h1{
+                color:white;
+                text-align: center;
+                line-height: 90px;
+                transition:all 0.2s;
+            }
+            .sidebar ul li:hover{
+                background-color: chartreuse;
+            }
+            *{
+                margin:0px;
+                padding:0px;
+            }
+            #open{
+                border:none;
+                background-color: transparent;
+                font-size:23px;
+                padding: 5px;
+            }
+            #close{
+                border:none;
+                background-color: transparent;
+                margin-left: 220px;
+                font-size:23px;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="show()" id="open">&#9776;</button>
+        <div id="sidebar" class="sidebar" >
+            <button onclick="hide()" id="close">&#10006;</button>
+            <h1>Welcome!</h1>
+            <ul>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Youtube</li></a>
+                <a href=""><li>Pro</li></a>
+                <a href=""><li>About Us</li></a>
+            </ul>
+        </div>
+        <script>
+            function show(){
+                document.getElementById("sidebar").style.left="0px";
+            }
+            function hide(){
+                document.getElementById("sidebar").style.left="-250px";
+            }
+        </script>
+    </body>
+</html>

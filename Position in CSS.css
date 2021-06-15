@@ -1,0 +1,28 @@
+.container{
+    width: 300px;
+    height: 300px;
+    background-color: lime;
+    /*relative position changes the position with respect to the current position*/
+    /*absolute position changes position with respect to the borders*/
+    /*relative 
+      absolute
+      fixed
+      static
+      sticky*/
+    position: relative;
+    top: 50px;
+    left: 200px;
+    overflow: hidden;
+}
+.inner{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.413);
+    position: absolute;
+    transition: all 0.5s;
+    font-size:50px;
+    color:white;
+}
+.container:hover .inner{
+    top:0px;
+}

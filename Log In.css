@@ -1,0 +1,35 @@
+.box{
+    border:none;
+    width:450px;
+    background-color: rgba(0, 0, 0,0);
+    margin:auto;
+    margin-top:110px;
+}
+.h{
+    text-align: left;
+    color:white;
+    font-family: cursive;
+    font-size:50px
+}
+.form{
+    background-color:rgba(0, 0, 0,0);
+    width:430px;
+    border:none;
+    font-size:15px;
+    padding: 10px;
+    margin:auto;
+}
+.c{
+    background-color: red;
+    color:white;
+    width: 50%;
+}
+body{
+    background-color: gray;
+    background-image: url(LOG_IN.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c2:focus{
+    background-color: lime;
+}

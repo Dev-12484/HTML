@@ -1,0 +1,22 @@
+h1{
+    color: #900C3F ;
+    font-family : pacifico ;
+    background-color :yellow ;
+    font-size : 20px
+}
+body {
+    background-color : #20CDE1 ;
+}
+p {
+    color:darkorange ;
+    font-size : 15px ;
+    font-family : pacifico; 
+}
+h2 {
+    font-size :20px ;
+    color:#900C3F;
+    font-family : pacifico ;
+}
+div {
+    border : orange 10px dotted ;
+}
